@@ -1,0 +1,717 @@
+:root{
+    --title: 150px;
+    --subtitle: 50px;
+    --subsection: 45px;
+    --semibold: 600;
+    --regular: 400;
+    --medium: 500;
+    --dark: #020403;
+    --gray: #ADADAD;
+    --white: #ffffff;
+    --mtitle: 40px;
+    --msubtitle: 25px;
+    --msubsection: 18px;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+/*utilidades*/
+.center{
+    text-align: center;
+}
+
+.margin-buttom{
+    margin-bottom: 50px;
+}
+
+.gray{
+    color: gray;
+}
+
+/*------------*/
+
+body{
+    font-size: 18px;
+    font-weight: var(--regular);
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    overflow-x: none;
+}
+
+.float{
+    left: 0;
+    position: absolute;
+}
+
+.floatsecond{
+    top: 500px;
+    position: absolute;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position: relative;
+    margin-left: -80px;
+}
+
+.circle::before{
+    content: "";
+    width: 95%;
+    height: 95%;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.circle::after{
+    content: "";
+    width: 85%;
+    height: 85%;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position: absolute;
+    left: 17px;
+    top: 15px;
+}
+/*--------Second circle--------*/
+
+.secondcircle{
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position:absolute;
+    right: 0;
+}
+
+.secondcircle::before{
+    content: "";
+    width: 95%;
+    height: 95%;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.secondcircle::after{
+    content: "";
+    width: 85%;
+    height: 85%;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header svg{
+    display: none;
+    position: absolute;
+    right: 50px;
+}
+
+.nav-bg{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+    gap: 80px;
+}
+
+header nav ul a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/*------------main------------*/
+
+main{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container-img{
+    width: 100%;
+    text-align: center;
+    margin: 80px 0px 30px;
+}
+
+.container-img img{
+    width: 200px;
+}
+
+.container-title h2{
+    text-align: center;
+    color: var(--gray);
+}
+
+.container-title h1{
+    margin: 0;
+    text-align: center;
+    font-size: var(--subtitle);
+    font-weight: var(--regular);
+}
+
+.icon-website{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/*------------ACERCA DE MI-------------*/
+
+.about-me{
+    text-align: center;
+    margin-top: 50px;
+    color: var(--gray);
+    margin-bottom: 45px;
+}
+
+.about-me h2{
+    color: var(--white);
+    font-weight: var(--regular);
+
+}
+
+/*---------Habilidades----------*/
+
+.skills{
+    margin-bottom: 45px;
+}
+
+.group-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 75px;
+}
+
+.skills .icons-bg{
+    width: 60px;
+    height: 60px;
+    background-color: #1c1616;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+
+/*----------Experiencia-----------*/
+
+.container-exp{
+    margin-bottom: 45px;
+}
+
+.container-exp > .first-cont, .second-cont, .third-cont{  
+    text-align: center;
+    margin: 0;
+}
+
+.container-exp h4{  
+    margin: 0;
+}
+
+.container-exp .data p{ 
+    text-align: start;
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--gray);
+}
+
+/*------calculo para centrar------*/
+.container-exp .first-margin{
+    margin-right: 60px;
+}
+
+.container-exp .margin-subtitle{
+    margin-left: 15px;
+}
+
+.container-exp .second-margin{
+    margin-right: 53px;
+}
+
+.container-exp .third-sub-margin{
+    margin-right: 33px;
+}
+.container-exp .margin-third{
+    margin-right: 71px;
+}
+
+.container-exp .data .none{ 
+    border: none;
+}
+
+/*Portafolio*/
+
+.portfolio{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.portfolio figure{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.portfolio figure img{
+    width: 300px;
+}
+
+/*Contactos*/
+
+.contacts .all-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .all-info{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts .icons-contacts svg{
+    border: 1px solid var(--white);
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.contacts .icons-contacts p{
+    font-size: 14px;
+}
+
+@media (max-width: 1200px){
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-bg{
+        width: 100%;
+        height: 100vh;
+        font-size: 20px;
+        background-color: var(--gray);
+        display: none;
+    }
+
+    .nav-bg nav{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-bg li{
+        width: 500px;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-bg li:hover{
+        background-color: var(--dark);
+        justify-content: center;
+    }
+    
+    .nav-bg .nav-menu{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav ul{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        color: var(--white);
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header svg{
+        display: block;
+        right: 40px;
+        top: 15px;
+        z-index: 3;
+    }
+
+    .portfolio figure img{
+        width: 230px;
+    }
+
+    .portfolio figure{
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        gap: none;
+    }
+}
+
+@media (max-width: 800px){
+
+    body{
+        overflow-x: hidden;
+        font-size: 16px;
+        font-weight: var(--regular);
+    }
+
+
+/*-----POSICION DEL CIRCULO-----*/
+
+    .float{
+        top: 1500px;
+        position: absolute;
+    }
+    
+    .floatsecond{
+        top: 500px;
+        position: absolute;
+    }
+
+/*------BEFORE Y AFTER DEL CIRCULO------*/
+
+    /*-----PRIMER CIRCULO-----*/
+
+    .circle{
+        width: 100px;
+        height: 100px;
+        border: 1px solid var(--white);
+        border-radius: 150px;
+        position: relative;
+        margin-left: -40px;
+    }
+    
+    .circle::before{
+        left: 3px;
+        top: 3px;
+    }
+    
+    .circle::after{
+        left: 8px;
+        top: 8px;
+    }
+    
+    /*--------Second circle--------*/
+    
+    .secondcircle{
+        width: 100px;
+        height: 100px;
+        right: -50px;
+        top: 900px;
+    }
+    
+    .secondcircle::before{
+        left: 3px;
+        top: 3px;
+    }
+    
+    .secondcircle::after{
+        left: 8px;
+        top: 8px;
+    }
+
+    .nav-bg{
+        width: 100%;
+        height: 100vh;
+        font-size: 20px;
+    }
+
+    .nav-bg nav{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-bg li{
+        width: 500px;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-bg li:hover{
+        background-color: var(--dark);
+        justify-content: center;
+    }
+
+/*---------------------------------------*/
+
+/*-------------MAIN-------------*/
+
+     .container-title h2{
+        font-size: var(--msubsection);
+        margin: 0;
+        font-weight: var(--regular);
+    }
+
+    .container-title h1{
+        font-size: var(--mtitle);
+        font-weight: var(--semibold);
+    }
+
+    .icon-website{
+        width: 75%;
+        margin-bottom: 50px;
+    }
+
+    /*---------ABOUT ME---------*/
+
+    .about-me{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+
+    /*----HABILIDADES----*/
+
+    .skills{
+        margin-bottom: 50px;
+    }
+
+    .skills .group-icons{
+        display: block;
+        margin: 0;
+    }
+
+    /*-----EXPERIENCIA-----*/
+
+    .container-exp{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .container-exp p{
+        color: var(--gray);
+    }
+
+    .container-exp .first-margin{
+        margin-right: 54px;
+    }
+    
+    .container-exp .margin-subtitle{
+        margin-left: 14px;
+    }
+    
+    .container-exp .second-margin{
+        margin-right: 47px;
+    }
+    
+    .container-exp .third-sub-margin{
+        margin-right: 30px;
+    }
+    .container-exp .margin-third{
+        margin-right: 64px;
+    }
+    
+    .container-exp .data .none{ 
+        border: none;
+    }
+
+    /*------PORTAFOLIO------*/
+
+    .portfolio{
+        margin-bottom: 50px;
+    }
+
+    .portfolio .center{
+        text-align: start;
+    }
+
+    .portfolio figure{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio figure img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*------CONTACTOS--------*/
+
+    .contacts .start{
+        text-align: start;
+    }
+
+    .contacts .icons-contacts{
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+
+    .float{
+        top: 1710px;
+        margin-left: -15px;
+        position: absolute;
+    }
+
+    /*------BEFORE Y AFTER DEL CIRCULO------*/
+
+    /*-----PRIMER CIRCULO-----*/
+
+    .circle{
+        width: 50px;
+        height: 50px;
+        border: 1px solid var(--gray);
+        border-radius: 150px;
+        position: relative;
+        margin-left: 35px;
+    }
+    
+    .circle::before{
+        border: 1px solid var(--gray);
+        left: 1px;
+        top: 1px;
+    }
+    
+    .circle::after{
+        border: 1px solid var(--gray);
+        left: 4px;
+        top: 4px;
+    }
+    
+    /*--------Second circle--------*/
+    
+    .secondcircle{
+        width: 50px;
+        height: 50px;
+        right: -50px;
+        top: 900px;
+        right: 20px;
+        border: 1px solid var(--gray);
+    }
+        
+    .secondcircle::before{
+        border: 1px solid var(--gray);
+        left: 1px;
+        top: 1px;
+    }
+        
+    .secondcircle::after{
+        border: 1px solid var(--gray);
+        left: 4px;
+        top: 4px;
+    }
+
+    header svg{
+        position: absolute;
+        right: 40px;
+    }
+
+    .nav-bg{
+        width: 100%;
+        height: 100vh;
+        font-size: 20px;
+    }
+
+    .nav-bg nav{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-bg li{
+        width: 500px;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-bg li:hover{
+        background-color: var(--dark);
+        justify-content: center;
+    }
+
+    .container-exp .data p{ 
+        text-align: start;
+        width: 100%;
+    }
+
+    .contacts .all-info{
+        margin: 0;
+        width: 100%;
+    }
+    
+}
