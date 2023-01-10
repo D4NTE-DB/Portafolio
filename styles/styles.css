@@ -202,6 +202,10 @@ main{
     margin-top: 50px;
     color: var(--gray);
     margin-bottom: 45px;
+    /* width: 750px; */
+    max-width: 750px;
+    margin-left: 24%;
+    margin-right: 20%;
 }
 
 .about-me h2{
@@ -244,6 +248,9 @@ main{
 /*----------Experiencia-----------*/
 
 .container-exp{
+    margin-left: 8%;
+    margin-right: 10%;
+    max-width: 1000px;
     margin-bottom: 45px;
 }
 
@@ -270,7 +277,8 @@ main{
 }
 
 .container-exp .margin-sub{
-    margin-left: 236px;
+    margin-left: 234px;
+    min-width: 10vw;
 }
 
 .container-exp .margin-subtitle{
@@ -533,15 +541,12 @@ main{
     }
 
     /*---------ABOUT ME---------*/
-
-   @media (min-width: 1200px) {
-    .about-me{
-        max-width: 120px;
-        /* margin-bottom: 50px; */
-    }
-   }
    
-
+   @media only screen and (min-width: 1000px) {
+    .about-me {
+     
+    }
+  }
 
 
 
