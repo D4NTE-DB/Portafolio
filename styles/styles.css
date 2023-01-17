@@ -203,9 +203,9 @@ main{
     color: var(--gray);
     margin-bottom: 45px;
     /* width: 750px; */
-    max-width: 750px;
+    /* max-width: 750px;
     margin-left: 24%;
-    margin-right: 20%;
+    margin-right: 20%; */
 }
 
 .about-me h2{
@@ -277,12 +277,12 @@ main{
 }
 
 .container-exp .margin-sub{
-    margin-left: 234px;
-    min-width: 10vw;
+    /* margin: auto; */
+    text-align: center;
 }
 
 .container-exp .margin-subtitle{
-    margin-left: 122px;
+    /* margin-left: 122px; */
 }
 
 .container-exp .second-margin{
@@ -403,7 +403,7 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-right: 300vh;
+        /* margin-right: 300vh; */
     }
 
     header svg{
@@ -729,5 +729,14 @@ main{
         margin: 0;
         width: 100%;
     }
-    
+
 }
+
+@media (min-width: 700px) {
+    .about-me{
+        width: 600px;
+        margin: 0 auto;
+        z-index: 99;
+    }
+}
+
