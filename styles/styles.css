@@ -176,7 +176,8 @@ main {
 }
 
 .container-img img {
-    width: 200px;
+    width: 250px;
+    
 }
 
 .container-title h2 {
@@ -256,7 +257,7 @@ main {
 .second-cont,
 .third-cont {
     text-align: center;
-    width: 310px;
+    width: 710px;
     margin: 50px;
 }
 
@@ -304,11 +305,11 @@ main {
 
 /*Portafolio*/
 
-.portfolio {
+/* .portfolio {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 45px;
-}
+} */
 
 .portfolio figure {
     margin: 0;
@@ -348,6 +349,14 @@ main {
 }
 
 @media (max-width: 1200px) {
+
+    .container-exp>.first-cont,
+    .second-cont,
+    .third-cont {
+        text-align: center;
+        width: 310px;
+        margin: 50px;
+    }
 
     body {
         overflow-x: hidden;
@@ -824,13 +833,26 @@ main {
  
 :target{
     /* padding-top: 80px; */
-    
+    animation-name: my-animation;
+    animation-duration: 1s;
     /* transition: all 0.8s ease-in-out; */
+    
 }
-
-a:visited{
-    color: #ffffff;
-}
+  
+  @keyframes my-animation {
+    0% {
+      transform: scale(1);
+      border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .tech-icons{
     display: flex;
@@ -913,7 +935,7 @@ h3{
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
 }
 
-main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-menu > li:hover, .icon-website > a > svg:hover, header:hover {
+main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-menu > li:hover, .icon-website > a > svg:hover, header:hover, .second-cont:hover {
     border: 2px solid transparent;
     border-radius: 10px;
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
