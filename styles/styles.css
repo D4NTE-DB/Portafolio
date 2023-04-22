@@ -1,4 +1,4 @@
-:root{
+:root {
     --title: 150px;
     --subtitle: 50px;
     --subsection: 45px;
@@ -18,29 +18,29 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
-  
-  *,
-  *::before,
-  *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 /*utilidades*/
-.center{
+.center {
     text-align: center;
 }
 
-.margin-buttom{
+.margin-buttom {
     margin-bottom: 50px;
 }
 
-.gray{
+.gray {
     color: gray;
 }
 
 /*------------*/
 
-body{
+body {
     font-size: 18px;
     font-weight: var(--regular);
     background-color: var(--dark);
@@ -50,17 +50,17 @@ body{
     overflow-x: none;
 }
 
-.float{
+.float {
     left: 0;
     position: absolute;
 }
 
-.floatsecond{
+.floatsecond {
     top: 500px;
     position: absolute;
 }
 
-.circle{
+.circle {
     width: 200px;
     height: 200px;
     border: 1px solid var(--white);
@@ -69,7 +69,7 @@ body{
     margin-left: -80px;
 }
 
-.circle::before{
+.circle::before {
     content: "";
     width: 95%;
     height: 95%;
@@ -80,7 +80,7 @@ body{
     top: 5px;
 }
 
-.circle::after{
+.circle::after {
     content: "";
     width: 85%;
     height: 85%;
@@ -90,18 +90,19 @@ body{
     left: 17px;
     top: 15px;
 }
+
 /*--------Second circle--------*/
 
-.secondcircle{
+.secondcircle {
     width: 200px;
     height: 200px;
     border: 1px solid var(--white);
     border-radius: 150px;
-    position:absolute;
+    position: absolute;
     right: 0;
 }
 
-.secondcircle::before{
+.secondcircle::before {
     content: "";
     width: 95%;
     height: 95%;
@@ -112,7 +113,7 @@ body{
     top: 5px;
 }
 
-.secondcircle::after{
+.secondcircle::after {
     content: "";
     width: 85%;
     height: 85%;
@@ -123,27 +124,30 @@ body{
     top: 15px;
 }
 
-header{
+header {
     width: 100%;
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
+    justify-content: end;
+    top: 0 !important;
+    background-color: #020403;
 }
 
-header svg{
+header svg {
     display: none;
     position: absolute;
     right: 50px;
 }
 
-.nav-bg{
+.nav-bg {
     width: 85%;
     display: flex;
     justify-content: flex-end;
     text-align: center;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -152,41 +156,41 @@ header nav ul{
     gap: 80px;
 }
 
-header nav ul a{
+header nav ul a {
     text-decoration: inherit;
     color: inherit;
 }
 
 /*------------main------------*/
 
-main{
+main {
     width: 75%;
     margin: 0 auto;
 }
 
-.container-img{
+.container-img {
     width: 100%;
     text-align: center;
     margin: 80px 0px 30px;
 }
 
-.container-img img{
+.container-img img {
     width: 200px;
 }
 
-.container-title h2{
+.container-title h2 {
     text-align: center;
     color: var(--gray);
 }
 
-.container-title h1{
+.container-title h1 {
     margin: 0;
     text-align: center;
     font-size: var(--subtitle);
     font-weight: var(--regular);
 }
 
-.icon-website{
+.icon-website {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -197,7 +201,7 @@ main{
 
 /*------------ACERCA DE MI-------------*/
 
-.about-me{
+.about-me {
     text-align: center;
     margin-top: 50px;
     color: var(--gray);
@@ -208,7 +212,7 @@ main{
     margin-right: 20%; */
 }
 
-.about-me h2{
+.about-me h2 {
     color: var(--white);
     font-weight: var(--regular);
 
@@ -216,18 +220,18 @@ main{
 
 /*---------Habilidades----------*/
 
-.skills{
+.skills {
     margin-bottom: 45px;
 }
 
-.group-icons{
+.group-icons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-right: 75px;
 }
 
-.skills .icons-bg{
+.skills .icons-bg {
     width: 60px;
     height: 60px;
     background-color: #1c1616;
@@ -237,7 +241,7 @@ main{
     align-items: center;
 }
 
-.group-cont{
+.group-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,24 +251,23 @@ main{
 
 /*----------Experiencia-----------*/
 
-.container-exp{
-    margin-left: 8%;
-    margin-right: 10%;
-    max-width: 1000px;
+.container-exp {
     margin-bottom: 45px;
 }
 
-.container-exp > .first-cont, .second-cont, .third-cont{  
+.container-exp>.first-cont,
+.second-cont,
+.third-cont {
     text-align: center;
     margin: 50px;
 }
 
 
-.container-exp h4{  
+.container-exp h4 {
     margin: 0;
 }
 
-.container-exp .data p{ 
+.container-exp .data p {
     text-align: start;
     width: 85%;
     margin: 0 auto;
@@ -272,86 +275,89 @@ main{
 }
 
 /*------calculo para centrar------*/
-.container-exp .first-margin{
+.container-exp .first-margin {
     margin-right: 100px;
 }
 
-.container-exp .margin-sub{
+.container-exp .margin-sub {
     /* margin: auto; */
     text-align: center;
 }
 
-.container-exp .margin-subtitle{
+.container-exp .margin-subtitle {
     /* margin-left: 122px; */
 }
 
-.container-exp .second-margin{
+.container-exp .second-margin {
     margin-right: 70px;
 }
 
-.container-exp .third-sub-margin{
+.container-exp .third-sub-margin {
     margin-right: 33px;
 }
-.container-exp .margin-third{
+
+.container-exp .margin-third {
     margin-right: 71px;
 }
 
-.container-exp .data .none{ 
+.container-exp .data .none {
     border: none;
 }
 
 /*Portafolio*/
 
-.portfolio{
+.portfolio {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 45px;
 }
 
-.portfolio figure{
+.portfolio figure {
     margin: 0;
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.portfolio figure img{
+.portfolio figure img {
     width: 300px;
 }
 
 /*Contactos*/
 
-.contacts .all-info{
+.contacts .all-info {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contacts .all-info{
+.contacts .all-info {
     margin: auto;
     width: 75%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.contacts .icons-contacts svg{
+.contacts .icons-contacts svg {
     border: 1px solid var(--white);
     padding: 5px;
     border-radius: 50px;
     text-align: center;
 }
 
-.contacts .icons-contacts p{
+.contacts .icons-contacts p {
     font-size: 14px;
 }
 
-@media (max-width: 1200px){
-    
-    body{
+@media (max-width: 1200px) {
+
+    body {
         overflow-x: hidden;
     }
 
-    .nav-bg{
+    .nav-bg {
+        position: fixed;
+        left: -2000px;
         width: 100%;
         height: 100vh;
         font-size: 20px;
@@ -359,7 +365,7 @@ main{
         display: none;
     }
 
-    .nav-bg nav{
+    .nav-bg nav {
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -369,7 +375,7 @@ main{
         flex-direction: column;
     }
 
-    .nav-bg li{
+    .nav-bg li {
         width: 500px;
         height: auto;
         box-sizing: border-box;
@@ -380,12 +386,12 @@ main{
         flex-direction: column;
     }
 
-    .nav-bg li:hover{
+    .nav-bg li:hover {
         background-color: var(--dark);
         justify-content: center;
     }
-    
-    .nav-bg .nav-menu{
+
+    .nav-bg .nav-menu {
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -393,8 +399,8 @@ main{
         justify-content: center;
     }
 
-   
-    header nav ul{
+
+    header nav ul {
         display: flex;
         list-style: none;
         text-decoration: none;
@@ -406,18 +412,18 @@ main{
         /* margin-right: 300vh; */
     }
 
-    header svg{
+    header svg {
         display: block;
         right: 40px;
         top: 15px;
         z-index: 3;
     }
 
-    .portfolio figure img{
+    .portfolio figure img {
         width: 230px;
     }
 
-    .portfolio figure{
+    .portfolio figure {
         margin: 0;
         display: flex;
         justify-content: space-evenly;
@@ -425,32 +431,32 @@ main{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
-    body{
+    body {
         overflow-x: hidden;
         font-size: 16px;
         font-weight: var(--regular);
     }
 
 
-/*-----POSICION DEL CIRCULO-----*/
+    /*-----POSICION DEL CIRCULO-----*/
 
-    .float{
+    .float {
         top: 1500px;
         position: absolute;
     }
-    
-    .floatsecond{
+
+    .floatsecond {
         top: 500px;
         position: absolute;
     }
 
-/*------BEFORE Y AFTER DEL CIRCULO------*/
+    /*------BEFORE Y AFTER DEL CIRCULO------*/
 
     /*-----PRIMER CIRCULO-----*/
 
-    .circle{
+    .circle {
         width: 100px;
         height: 100px;
         border: 1px solid var(--white);
@@ -458,43 +464,43 @@ main{
         position: relative;
         margin-left: -40px;
     }
-    
-    .circle::before{
+
+    .circle::before {
         left: 3px;
         top: 3px;
     }
-    
-    .circle::after{
+
+    .circle::after {
         left: 8px;
         top: 8px;
     }
-    
+
     /*--------Second circle--------*/
-    
-    .secondcircle{
+
+    .secondcircle {
         width: 100px;
         height: 100px;
         right: -50px;
         top: 900px;
     }
-    
-    .secondcircle::before{
+
+    .secondcircle::before {
         left: 3px;
         top: 3px;
     }
-    
-    .secondcircle::after{
+
+    .secondcircle::after {
         left: 8px;
         top: 8px;
     }
 
-    .nav-bg{
+    .nav-bg {
         width: 100%;
         height: 100vh;
         font-size: 20px;
     }
 
-    .nav-bg nav{
+    .nav-bg nav {
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -504,7 +510,7 @@ main{
         flex-direction: column;
     }
 
-    .nav-bg li{
+    .nav-bg li {
         width: 500px;
         height: auto;
         box-sizing: border-box;
@@ -515,121 +521,116 @@ main{
         flex-direction: column;
     }
 
-    .nav-bg li:hover{
+    .nav-bg li:hover {
         background-color: var(--dark);
         justify-content: center;
     }
 
-/*---------------------------------------*/
+    /*---------------------------------------*/
 
-/*-------------MAIN-------------*/
+    /*-------------MAIN-------------*/
 
-     .container-title h2{
+    .container-title h2 {
         font-size: var(--msubsection);
         margin: 0;
         font-weight: var(--regular);
     }
 
-    .container-title h1{
+    .container-title h1 {
         font-size: var(--mtitle);
         font-weight: var(--semibold);
     }
 
-    .icon-website{
+    .icon-website {
         width: 75%;
         margin-bottom: 50px;
     }
 
     /*---------ABOUT ME---------*/
-   
-   @media only screen and (min-width: 1000px) {
-    .about-me {
-     
+
+    @media only screen and (min-width: 1000px) {
+        .about-me {}
     }
-  }
 
 
 
     /*----HABILIDADES----*/
 
-    .skills{
+    .skills {
         margin-bottom: 50px;
     }
 
-    .skills .group-icons{
+    .skills .group-icons {
         display: block;
         margin: 0;
     }
 
     /*-----EXPERIENCIA-----*/
 
-    .container-exp{
+    .container-exp {
         width: 100%;
         margin: 0 auto;
         margin-bottom: 50px;
     }
 
-    .container-exp p{
+    .container-exp p {
         color: var(--gray);
     }
 
-    .container-exp .first-margin{
+    .container-exp .first-margin {
         margin-right: 54px;
     }
-    
-    .container-exp .margin-subtitle{
+
+    .container-exp .margin-subtitle {
         margin-left: 14px;
     }
-    
-    .container-exp .second-margin{
+
+    .container-exp .second-margin {
         margin-right: 47px;
     }
-    
-    .container-exp .third-sub-margin{
+
+    .container-exp .third-sub-margin {
         margin-right: 30px;
     }
-    .container-exp .margin-third{
+
+    .container-exp .margin-third {
         margin-right: 64px;
     }
-    
-    .container-exp .data .none{ 
+
+    .container-exp .data .none {
         border: none;
     }
 
     /*------PORTAFOLIO------*/
 
-    .portfolio{
+    .portfolio {
         margin-bottom: 50px;
     }
 
-    .portfolio .center{
+    .portfolio .center {
         text-align: start;
     }
 
-    .portfolio figure{
+    .portfolio figure {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .portfolio figure img{
+    .portfolio figure img {
         width: 100%;
         margin: 0 auto;
     }
 
     /*------CONTACTOS--------*/
 
-    .contacts .start{
-        text-align: start;
-    }
-
-    .contacts .icons-contacts{
+    .contacts .icons-contacts {
         margin-left: 20px;
     }
 }
 
-@media (min-width: 375px) and (max-width: 700px){
+@media (min-width: 375px) and (max-width: 700px) {
 
-    .float{
+    .float {
         top: 1710px;
         margin-left: -15px;
         position: absolute;
@@ -639,7 +640,7 @@ main{
 
     /*-----PRIMER CIRCULO-----*/
 
-    .circle{
+    .circle {
         width: 50px;
         height: 50px;
         border: 1px solid var(--gray);
@@ -647,22 +648,22 @@ main{
         position: relative;
         margin-left: 35px;
     }
-    
-    .circle::before{
+
+    .circle::before {
         border: 1px solid var(--gray);
         left: 1px;
         top: 1px;
     }
-    
-    .circle::after{
+
+    .circle::after {
         border: 1px solid var(--gray);
         left: 4px;
         top: 4px;
     }
-    
+
     /*--------Second circle--------*/
-    
-    .secondcircle{
+
+    .secondcircle {
         width: 50px;
         height: 50px;
         right: -50px;
@@ -670,31 +671,31 @@ main{
         right: 20px;
         border: 1px solid var(--gray);
     }
-        
-    .secondcircle::before{
+
+    .secondcircle::before {
         border: 1px solid var(--gray);
         left: 1px;
         top: 1px;
     }
-        
-    .secondcircle::after{
+
+    .secondcircle::after {
         border: 1px solid var(--gray);
         left: 4px;
         top: 4px;
     }
 
-    header svg{
+    header svg {
         position: absolute;
         right: 40px;
     }
 
-    .nav-bg{
+    .nav-bg {
         width: 100%;
         height: 100vh;
         font-size: 20px;
     }
 
-    .nav-bg nav{
+    .nav-bg nav {
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -704,7 +705,7 @@ main{
         flex-direction: column;
     }
 
-    .nav-bg li{
+    .nav-bg li {
         width: 500px;
         height: auto;
         box-sizing: border-box;
@@ -715,17 +716,17 @@ main{
         flex-direction: column;
     }
 
-    .nav-bg li:hover{
+    .nav-bg li:hover {
         background-color: var(--dark);
         justify-content: center;
     }
 
-    .container-exp .data p{ 
+    .container-exp .data p {
         text-align: start;
         width: 100%;
     }
 
-    .contacts .all-info{
+    .contacts .all-info {
         margin: 0;
         width: 100%;
     }
@@ -733,10 +734,73 @@ main{
 }
 
 @media (min-width: 700px) {
-    .about-me{
+    .about-me {
         width: 600px;
         margin: 0 auto;
         z-index: 99;
     }
 }
 
+
+.nav-bg {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+    .nav-widget {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 300px;
+        height: 80px;
+        border: solid 2px #ffffff;
+        border-radius: 100px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        background-color: #020403;
+    }
+}
+@media (min-width: 1201px) {
+    .nav-widget{
+        position: fixed;
+        left: -3000px;
+    }
+}
+
+
+.widget {
+    display: flex;
+    flex-direction: row;
+    /* color: red; */
+    fill: #ffffff;
+
+}
+
+
+
+.portfolio-img>a>img {
+    /* position: absolute; */
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-img>a>img:hover {
+    transform: scale(1.2);
+}
+
+.hover-img {
+    position: absolute;
+    display: none;
+}
+
+.portfolio-img > a:hover .hover-img {
+    display: inline;
+}
