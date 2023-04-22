@@ -127,10 +127,11 @@ body {
 header {
     width: 100%;
     position: fixed;
+    top: ;
     display: flex;
     align-items: center;
     justify-content: end;
-    top: 0 !important;
+    top: -10px !important;
     background-color: #020403;
 }
 
@@ -823,7 +824,8 @@ main {
  
 :target{
     /* padding-top: 80px; */
-    transition: all 0.8s ease-in-out;
+    
+    /* transition: all 0.8s ease-in-out; */
 }
 
 a:visited{
@@ -867,7 +869,7 @@ main {
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 100px;
+        margin: 0 auto;
         height: 100vh;
         z-index: -1;
     }
@@ -897,11 +899,11 @@ h3{
 
 /* HOVER STYLE  */
 
-{
+/* {
     border: 2px solid transparent;
     border-radius: 10px;
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
-}
+} */
 
 .tech-icons > div:hover {
     fill: white !important;
@@ -911,10 +913,12 @@ h3{
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
 }
 
-main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-menu > li:hover, .icon-website > a > svg:hover {
+main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-menu > li:hover, .icon-website > a > svg:hover, header:hover {
     border: 2px solid transparent;
     border-radius: 10px;
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+    /* transform: scale(1.2); */
+
 }
 
 @media (max-width: 1000px) {
