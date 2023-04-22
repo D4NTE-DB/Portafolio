@@ -315,7 +315,7 @@ main {
 .portfolio figure {
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -608,7 +608,7 @@ main {
     }
 
     .portfolio .center {
-        text-align: start;
+        /* text-align: start; */
     }
 
     .portfolio figure {
@@ -733,7 +733,7 @@ main {
 
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
     .about-me {
         width: 600px;
         margin: 0 auto;
@@ -745,6 +745,7 @@ main {
 .nav-bg {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -803,4 +804,25 @@ main {
 
 .portfolio-img > a:hover .hover-img {
     display: inline;
+}
+
+:target{
+    padding-top: 80px;
+}
+
+.tech-icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    gap: 50px;
+    text-align: center;
+}
+
+div > box-icon {
+    fill: white !important;
+    width: 100px;
 }
