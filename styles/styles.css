@@ -135,7 +135,7 @@ header {
 }
 
 header svg {
-    display: none;
+    /* display: none; */
     position: absolute;
     right: 50px;
 }
@@ -251,10 +251,6 @@ main {
 
 /*----------Experiencia-----------*/
 
-.container-exp {
-    margin-bottom: 45px;
-}
-
 .container-exp>.first-cont,
 .second-cont,
 .third-cont {
@@ -332,7 +328,7 @@ main {
 }
 
 .contacts .all-info {
-    margin: auto;
+    /* margin: auto; */
     width: 75%;
     display: flex;
     justify-content: space-evenly;
@@ -414,7 +410,7 @@ main {
 
     header svg {
         display: block;
-        right: 40px;
+        right: -1000px;
         top: 15px;
         z-index: 3;
     }
@@ -785,7 +781,7 @@ main {
 
 
 
-.portfolio-img>a>img {
+.portfolio-img>a > img {
     /* position: absolute; */
     margin: 0 auto;
     width: 300px;
@@ -793,21 +789,43 @@ main {
     transition: all 0.5s ease-in-out;
 }
 
+
+.portfolio-img > a{
+    position: relative;
+}
+
 .portfolio-img>a>img:hover {
     transform: scale(1.2);
 }
 
 .hover-img {
+    width: 300px;
+    height: 300px;
     position: absolute;
+    left: 0;
     display: none;
+    background-color: #020403;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+    
 }
+
 
 .portfolio-img > a:hover .hover-img {
     display: inline;
+    top: 0;
 }
 
+/* Target for HREF */
+ 
 :target{
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    transition: all 0.8s ease-in-out;
+}
+
+a:visited{
+    color: #ffffff;
 }
 
 .tech-icons{
@@ -816,13 +834,82 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 0;
     width: 50%;
     gap: 50px;
     text-align: center;
+    
 }
 
-div > box-icon {
+.tech-icons > div > box-icon {
     fill: white !important;
     width: 100px;
+}
+
+.container-title > div{
+    margin: 20px;
+}
+
+div > box-icon{
+    fill: #ffffff;
+    width: 50px;
+}
+
+main {
+    /* margin: 50px auto; */
+}
+@media (min-width: 1200px) {
+    main > section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 100px;
+        height: 100vh;
+    }
+    main > section > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 1000px;
+        height: 700px;
+    }
+}
+main > section > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+h3{
+    margin: 10px;
+}
+
+/* HOVER STYLE  */
+
+{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+}
+
+.tech-icons > div:hover {
+    fill: white !important;
+    /* width: 100px; */
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+}
+
+main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-menu > li:hover, .icon-website > a > svg:hover {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
 }

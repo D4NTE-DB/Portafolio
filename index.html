@@ -19,14 +19,6 @@
 
 <body>
     <header>
-        <svg class="nav-toggle" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2"
-            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-        </svg>
         <div class="nav-bg">
             <h2>Daniel.</h2>
             <nav>
@@ -48,6 +40,9 @@
             <li><a class="widget" href="#about-me">
                     <box-icon name='briefcase-alt' flip='horizontal'></box-icon>
                 </a></li>
+            <li><a class="widget" href="#techs">
+                    <box-icon name='briefcase'></box-icon>
+                </a></li>
             <li><a class="widget" href="#container-exp">
                     <box-icon name='briefcase'></box-icon>
                 </a></li>
@@ -61,69 +56,76 @@
     </header>
     <main>
 
-        <section class="container-title" style="height: 100hv;">
-            <figure class="container-img">
-                <img src="images/Imagen1.png" alt="profile">
-            </figure>
-            <h2><span>Hi, I'm Daniel Babionia</span></h2>
-            <h1>Designer and</h1>
-            <h1>Web Developer</h1>
-            <figure class="icon-website">
-                <a href="https://www.linkedin.com/in/daniel-babilonia-072598150/">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_105_311)">
-                            <path
-                                d="M36.2379 22.1637V34.5H29.9916V23.625C29.9916 22.2912 29.9843 20.6433 29.4643 19.3304C29.1986 18.6596 28.7905 18.0507 28.163 17.6129C27.5344 17.1745 26.7283 16.9375 25.7191 16.9375C24.711 16.9375 23.88 17.1345 23.2056 17.5078C22.5283 17.8828 22.0386 18.4192 21.691 19.0494C21.0087 20.2863 20.8679 21.897 20.8679 23.43V34.5H14.6191V12.1325H20.5779V14.82V15.32H21.0779H21.1791H21.4807L21.6214 15.0533C22.5078 13.3732 24.7084 11.5462 28.0441 11.5462C31.5927 11.5462 33.581 12.7039 34.7218 14.5159C35.896 16.381 36.2379 19.0339 36.2379 22.1637ZM9.07414 34.5H2.81789V12.1325H9.07414V34.5ZM5.94164 7.945C3.90392 7.945 2.23914 6.25253 2.23914 4.2025C2.23914 3.22054 2.62922 2.27879 3.32357 1.58444C4.01793 0.890084 4.95967 0.5 5.94164 0.5C6.9236 0.5 7.86535 0.890084 8.5597 1.58444C9.25405 2.27879 9.64414 3.22054 9.64414 4.2025C9.64414 6.25253 7.97936 7.945 5.94164 7.945Z"
-                                stroke="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_105_311">
-                                <rect width="40" height="40" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-            </figure>
+        <section class="container-title">
+            <div>
+                <figure class="container-img" style="margin: 50px;">
+                    <img src="images/Imagen1.png" alt="profile">
+                </figure>
+                <h2><span>Hi, I'm Daniel Babionia</span></h2>
+                <h1>Designer and</h1>
+                <h1>Web Developer</h1>
+                <figure class="icon-website">
+                    <a href="https://www.linkedin.com/in/daniel-babilonia-072598150/">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_105_311)">
+                                <path
+                                    d="M36.2379 22.1637V34.5H29.9916V23.625C29.9916 22.2912 29.9843 20.6433 29.4643 19.3304C29.1986 18.6596 28.7905 18.0507 28.163 17.6129C27.5344 17.1745 26.7283 16.9375 25.7191 16.9375C24.711 16.9375 23.88 17.1345 23.2056 17.5078C22.5283 17.8828 22.0386 18.4192 21.691 19.0494C21.0087 20.2863 20.8679 21.897 20.8679 23.43V34.5H14.6191V12.1325H20.5779V14.82V15.32H21.0779H21.1791H21.4807L21.6214 15.0533C22.5078 13.3732 24.7084 11.5462 28.0441 11.5462C31.5927 11.5462 33.581 12.7039 34.7218 14.5159C35.896 16.381 36.2379 19.0339 36.2379 22.1637ZM9.07414 34.5H2.81789V12.1325H9.07414V34.5ZM5.94164 7.945C3.90392 7.945 2.23914 6.25253 2.23914 4.2025C2.23914 3.22054 2.62922 2.27879 3.32357 1.58444C4.01793 0.890084 4.95967 0.5 5.94164 0.5C6.9236 0.5 7.86535 0.890084 8.5597 1.58444C9.25405 2.27879 9.64414 3.22054 9.64414 4.2025C9.64414 6.25253 7.97936 7.945 5.94164 7.945Z"
+                                    stroke="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_105_311">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </figure>
+            </div>
         </section>
-
         <section class="about-me" id="about-me">
-            <h2></h2>
-            <h2>About Me</h2>
-            <p>“I'm a developer with experience in building websites for small and medium sized businesses. Whether
-                you're trying to win work, list your services or even create a whole online store - I can help, I also
-                worked for eBay as Bilingual Customer Service Representative for more than a year, so I can provide a
-                really good insight when it comes from e-commerce platforms or UX-UI desings!</p>
+            <div>
+                <h2></h2>
+                <h2>About Me</h2>
+                <p>“I'm a developer with experience in building websites for small and medium sized businesses. Whether
+                    you're trying to win work, list your services or even create a whole online store - I can help, I
+                    also
+                    worked for eBay as Bilingual Customer Service Representative for more than a year, so I can provide
+                    a
+                    really good insight when it comes from e-commerce platforms or UX-UI desings!</p>
+            </div>
         </section>
         <section class="techs" id="techs">
-            <h2 class="center">Technologies</h2>
-            <div class="tech-icons">
-                <div>
-                    <box-icon name='javascript' type='logo' size="large"></box-icon>
-                    <h3>Javascript</h3>
-                </div>
-                <div>
-                    <box-icon name='css3' type='logo' size="large"></box-icon>
-                    <h3>CSS</h3>
-                </div>
-                <div>
-                    <box-icon name='react' type='logo' size="large"></box-icon>
-                    <h3>React</h3>
-                </div> 
-                <div>
-                    <box-icon name='redux' type='logo' size="large"></box-icon>
-                    <h3>Redux</h3>
-                </div>
-                <div>
-                    <box-icon name='bootstrap' type='logo' size="large"></box-icon>
-                    <h3>Bootstrap</h3>
-                </div>
-                <div>
-                    <box-icon name='wordpress' type='logo' size="large"></box-icon>
-                    <h3>WordPress</h3>
-                </div>
-                <div>
-                    <box-icon name='nodejs' type='logo' size="large"></box-icon>
-                    <h3>Node JS</h3>
+            <div>
+                <h2 class="center">Technologies</h2>
+                <div class="tech-icons">
+                    <div>
+                        <box-icon name='javascript' type='logo' size="large"></box-icon>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div>
+                        <box-icon name='css3' type='logo' size="large"></box-icon>
+                        <h3>CSS</h3>
+                    </div>
+                    <div>
+                        <box-icon name='react' type='logo' size="large"></box-icon>
+                        <h3>React</h3>
+                    </div>
+                    <div>
+                        <box-icon name='redux' type='logo' size="large"></box-icon>
+                        <h3>Redux</h3>
+                    </div>
+                    <div>
+                        <box-icon name='bootstrap' type='logo' size="large"></box-icon>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div>
+                        <box-icon name='wordpress' type='logo' size="large"></box-icon>
+                        <h3>WordPress</h3>
+                    </div>
+                    <div>
+                        <box-icon name='nodejs' type='logo' size="large"></box-icon>
+                        <h3>Node JS</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,19 +133,21 @@
             <div class="secondcircle"></div>
         </div>
         <section class="container-exp" id="container-exp">
-            <h2 class="center">Experience</h2>
-            <div class="first-cont">
-                <h4 class="margin-sub">Bilingual Customer Service Representative</h4>
-                <h4 class="first-margin gray">eBay</h4>
-                <div class="data">
-                    <p>2021-2023</p>
+            <div>
+                <h2 class="center">Experience</h2>
+                <div class="first-cont">
+                    <h4 class="margin-sub">Bilingual Customer Service Representative</h4>
+                    <h4 class="first-margin gray">eBay</h4>
+                    <div class="data">
+                        <p>2021-2023</p>
+                    </div>
                 </div>
-            </div>
-            <div class="second-cont">
-                <h4 class="margin-subtitle">Freelance Front End Desinger</h4>
-                <h4 class="second-margin gray">UpWork</h4>
-                <div class="data">
-                    <p>2022</p>
+                <div class="second-cont">
+                    <h4 class="margin-subtitle">Freelance Front End Desinger</h4>
+                    <h4 class="second-margin gray">UpWork</h4>
+                    <div class="data">
+                        <p>2022</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,23 +155,45 @@
             <div class="circle"></div>
         </div>
         <section class="portfolio" id="portfolio">
+            <div>
             <h2 class="center">Portfolio</h2>
             <figure class="portfolio-img">
                 <a href="https://animated-crumble-1f907b.netlify.app/">
                     <img src="images/RicknMorty.png" alt="images1">
-                    <img class="hover-img" src="images\ejemplo 2.png" alt="">
+                    <div class="hover-img">
+                        <h2>Technologies</h2>
+                        <div>
+                            <box-icon name='react' type='logo' size="small"></box-icon>
+                            <h3>React</h3>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://thunderous-alfajores-b57ed7.netlify.app/">
                     <img src="images/weather.png" alt="images2">
-                    <img class="hover-img" src="images\ejemplo 2.png" alt="">
+                    <div class="hover-img">
+                        <h2>Technologies</h2>
+                        <box-icon name='react' type='logo' size="small"></box-icon>
+                        <h3>React</h3>
+                        <box-icon name='redux' type='logo' size="large"></box-icon>
+                        <h3>Redux</h3>
+                    </div>
                 </a>
                 <a href="https://jade-croissant-9a07e0.netlify.app/">
                     <img src="images/E-Commerce-White.png" alt="images3">
-                    <img class="hover-img" src="images\ejemplo 2.png" alt="">
+                    <div class="hover-img">
+                        <h2>Technologies</h2>
+                        <box-icon name='javascript' type='logo' size="large"></box-icon>
+                        <h3>Javascript</h3>
+                        <box-icon name='css3' type='logo' size="large"></box-icon>
+                        <h3>CSS</h3>
+                    </div>
+
                 </a>
             </figure>
+           </div>
         </section>
         <section class="contacts" id="contacts">
+            <div>
             <h2 class="start center">Contact Me</h2>
             <div class="all-info">
                 <div class="icons-contacts center">
@@ -192,6 +218,7 @@
                     <p class="center">dantealigheri.1998@gmail.com</p>
                 </div>
             </div>
+        </div>
         </section>
     </main>
     <footer class="center">
