@@ -1011,7 +1011,27 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
         border-radius: 10px;
         box-shadow: 0 0 10px #fff;
     }
-    
+   section > div {
+        display: flex;
+        /* height: 600px; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* overflow: auto; */
+    }
+    .tech-icons{
+        flex-direction: row;
+        flex-wrap: unset;
+        justify-content: unset;
+        overflow: auto;
+    }
+    .hover-img >3{
+        /* flex-direction: row; */
+        /* flex-wrap: unset !important; */
+        /* overflow: auto !important; */
+        color: white;
+    }
 }
 
 .home-btn{
@@ -1036,7 +1056,8 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
 }
 
 a{
-    text-decoration: none;
+    color: #ffffff;
+    text-decoration: none !important;
 }
 
 .all-info{
@@ -1048,5 +1069,8 @@ a{
 div > p{
     padding: 10px;
 
+}
+.portfolio-img {
+    
 }
 
