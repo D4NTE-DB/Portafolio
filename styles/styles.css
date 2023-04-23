@@ -973,9 +973,9 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
     display: flex;
     align-items: center;
     justify-content: center;
-    position: inherit;
-    top: 3%;
-    left: 25%;
+    position: fixed;
+    top: 1%;
+    left: 10%;
     background-color: #020403;
     color: white;
     width: 100px;
@@ -990,7 +990,7 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
         display: flex;
         align-items: center;
         justify-content: center;
-        position: inherit;
+        position: fixed;
         top: 1%;
         left: 9%;
         background-color: #020403;
