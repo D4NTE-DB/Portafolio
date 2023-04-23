@@ -637,6 +637,10 @@ main {
     .contacts .icons-contacts {
         margin-left: 20px;
     }
+
+    .second-cont{
+        width: 250px;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 700px) {
@@ -743,15 +747,6 @@ main {
     }
 
 }
-
-@media (min-width: 1000px) {
-    .about-me {
-        width: 600px;
-        margin: 0 auto;
-        z-index: 99;
-    }
-}
-
 
 .nav-bg {
     display: flex;
@@ -1032,3 +1027,15 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
 a{
     text-decoration: none;
 }
+
+.all-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div > p{
+    padding: 10px;
+
+}
+

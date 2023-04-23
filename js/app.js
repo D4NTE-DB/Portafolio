@@ -32,7 +32,7 @@ enEs.addEventListener("click", () => {
     isTogg = !isTogg;
     console.log("sss")
     spanName.innerHTML = isTogg ? `Hola, Soy Daniel Babilonia` : `Hi, I'm Daniel Babionia`
-    console.log(btnDownload[0])
+    console.log(h2Title[10])
     list[0].innerHTML = isTogg ? 'Inicio' : `Home`
     list[1].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
     list[2].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
@@ -43,7 +43,7 @@ enEs.addEventListener("click", () => {
     h2Title[4].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
     h2Title[5].innerHTML = isTogg ? 'Experiencía' : `Experience`
     h2Title[6].innerHTML = isTogg ? 'Portafolio' : `Portfolio`
-    h2Title[7].innerHTML = isTogg ? 'Contáctame' : `Contact Me`
+    h2Title[10].innerHTML = isTogg ? 'Contáctame' : `Contact Me`
     pText[0].innerHTML = isTogg ? 'Soy un desarrollador con experiencia en la creación de sitios web para pequeñas y medianas empresas. Ya sea que esté tratando de ganar trabajo, listar sus servicios o incluso crear una tienda en línea completa, puedo ayudar. Además, trabajé como Representante de servicio al cliente bilingüe para eBay durante más de un año, por lo que puedo proporcionar una excelente perspectiva en cuanto a plataformas de comercio electrónico o diseños de UX-UI.' : `I'm a developer with experience in building websites for small and medium sized businesses. Whether you're trying to win work, list your services or even create a whole online store - I can help, I also worked for eBay as Bilingual Customer Service Representative for more than a year, so I can provide a really good insight when it comes from e-commerce platforms or UX-UI desings.`
     pText[1].innerHTML = isTogg ? '2023 - Presente' : `2023 - Present`
     pText[4].innerHTML = isTogg ? 'Número Telefono' : `Phone Number` 
