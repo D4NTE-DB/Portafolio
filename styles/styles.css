@@ -966,6 +966,16 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
         z-index: 1;
     }
+    .hover-img>h2{
+        font-size: 10px !important;
+    }
+    .hover-img>h3{
+        font-size: 10px !important;
+    }
+    div > box-icon{
+        fill: #ffffff;
+        width: 30px;
+    }
 }
 
 
@@ -1001,6 +1011,7 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
         border-radius: 10px;
         box-shadow: 0 0 10px #fff;
     }
+    
 }
 
 .home-btn{
