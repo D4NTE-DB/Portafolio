@@ -32,7 +32,7 @@ enEs.addEventListener("click", () => {
     isTogg = !isTogg;
     console.log("sss")
     spanName.innerHTML = isTogg ? `Hola, Soy Daniel Babilonia` : `Hi, I'm Daniel Babionia`
-    console.log(h2Title[10])
+    console.log(pText[6])
     list[0].innerHTML = isTogg ? 'Inicio' : `Home`
     list[1].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
     list[2].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
@@ -58,7 +58,18 @@ enEs.addEventListener("click", () => {
     h4Text[6].innerHTML = isTogg ? 'Desarrollador Front End' : `Front End Developer`
     h1Text[0].innerHTML = isTogg ? 'Desarrollador Web y Representante de Servicio al cliente Bilingüe' : `Web Developer and Bilingual Customer Service Representative`
     btnDownload[0].innerHTML = isTogg ? 'DESCARGAR HV' : `DOWNLOAD CV`
+    
 })
+
+new ClipboardJS('#boton-a-copiar', {
+    text: function(trigger) {
+        console.log("perrito")
+      return trigger.getAttribute('data-clipboard-target');
+    }
+  });
+  
+
+  new ClipboardJS(pText[6]);
 
 navToggle.addEventListener("click", ()=> {
 

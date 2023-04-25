@@ -15,6 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Rubik:wght@400;500;600&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 </head>
 
 <body>
@@ -203,8 +204,10 @@
                                 stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="center">Phone Number</p>
-                        <p class="center">+57 301 405 6354</p>
+                        <p class="center" id="text-copy">+57 301 405 6354</p>
+                        <button id="boton-a-copiar" type="button" data-clipboard-target="#text-copy" >c</button>
                     </div>
+                    <a href="maiilto:dantealigheri.1998@gmail.com">
                     <div class="icons-contacts center">
                         <svg width="40" height="40" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -215,8 +218,9 @@
                         </svg>
                         <h4 class="center"></h4>
                         <p class="center" id="myInput">Email</p>
-                        <p class="center">dantealigheri.1998@gmail.com</p>
+                        <p class="center" >dantealigheri.1998@gmail.com</p>
                     </div>
+                </a>
                 </div>
             </div>
         </section>
@@ -224,6 +228,8 @@
     <footer class="center">
         <h4> Made with ❤ by Dante from Academlo</h>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
