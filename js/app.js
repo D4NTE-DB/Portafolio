@@ -44,7 +44,11 @@ enEs.addEventListener("click", () => {
     h2Title[5].innerHTML = isTogg ? 'Experiencía' : `Experience`
     h2Title[6].innerHTML = isTogg ? 'Portafolio' : `Portfolio`
     h2Title[10].innerHTML = isTogg ? 'Contáctame' : `Contact Me`
-    pText[0].innerHTML = isTogg ? 'Soy un desarrollador con experiencia en la creación de sitios web para pequeñas y medianas empresas. Ya sea que esté tratando de ganar trabajo, listar sus servicios o incluso crear una tienda en línea completa, puedo ayudar. Además, trabajé como Representante de servicio al cliente bilingüe para eBay durante más de un año, por lo que puedo proporcionar una excelente perspectiva en cuanto a plataformas de comercio electrónico o diseños de UX-UI.' : `I'm a developer with experience in building websites for small and medium sized businesses. Whether you're trying to win work, list your services or even create a whole online store - I can help, I also worked for eBay as Bilingual Customer Service Representative for more than a year, so I can provide a really good insight when it comes from e-commerce platforms or UX-UI desings.`
+    pText[0].innerHTML = isTogg ? `Como Desarrollador Web Frontend y Representante de Servicio al Cliente Bilingüe, estoy emocionado de contar con una amplia experiencia en atención al cliente en un ambiente bilingüe y habilidades en la creación y diseño de interfaces de usuario impresionantes. Además, tengo la capacidad de solucionar problemas y trabajar en equipo de manera efectiva para optimizar la experiencia del usuario en cualquier proyecto que se me presente. 
+
+    Estoy listo para enfrentar cualquier desafío con entusiasmo y ayudar a llevar su negocio al siguiente nivel.` : `As a Frontend Web Developer and Bilingual Customer Service Representative, I am excited to have extensive experience in customer service in a bilingual environment and skills in creating and designing impressive user interfaces. Additionally, I have the ability to solve problems and work effectively in a team to optimize the user experience on any project presented to me.
+
+    I am ready to face any challenge with enthusiasm and help take your business to the next level.`
     pText[1].innerHTML = isTogg ? '2023 - Presente' : `2023 - Present`
     pText[4].innerHTML = isTogg ? 'Número Telefono' : `Phone Number` 
     h4Text[0].innerHTML = isTogg ? 'Especialista en Soporte Técnico' : `Technical Support Specialist`
