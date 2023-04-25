@@ -14,10 +14,11 @@ const INFO = [
         ]
     },  
     ]
-
+    const copyButton = document.getElementById('boton-a-copiar');
 const enEs = document.querySelector(".button-trans")   
 const spanName = document.querySelector("span")
 const h1Text = document.querySelectorAll("h1")
+const anchors = document.querySelectorAll('a')
 const pText = document.querySelectorAll("p")
 const h2Title = document.querySelectorAll("h2")
 const h4Text = document.querySelectorAll("h4")
@@ -32,7 +33,7 @@ enEs.addEventListener("click", () => {
     isTogg = !isTogg;
     console.log("sss")
     spanName.innerHTML = isTogg ? `Hola, Soy Daniel Babilonia` : `Hi, I'm Daniel Babionia`
-    console.log(pText[6])
+    console.log(anchors[17])
     list[0].innerHTML = isTogg ? 'Inicio' : `Home`
     list[1].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
     list[2].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
@@ -58,7 +59,8 @@ enEs.addEventListener("click", () => {
     h4Text[6].innerHTML = isTogg ? 'Desarrollador Front End' : `Front End Developer`
     h1Text[0].innerHTML = isTogg ? 'Desarrollador Web y Representante de Servicio al cliente Bilingüe' : `Web Developer and Bilingual Customer Service Representative`
     btnDownload[0].innerHTML = isTogg ? 'DESCARGAR HV' : `DOWNLOAD CV`
-    
+    let info = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
+    anchors[17].setAttribute('href', info)
 })
 
 // new ClipboardJS('#boton-a-copiar', {
@@ -68,7 +70,7 @@ enEs.addEventListener("click", () => {
 //     }
 //   });
 
-let copyButton = document.getElementById('boton-a-copiar');
+
 
 copyButton.addEventListener('click', function() {
     console.log('222')
