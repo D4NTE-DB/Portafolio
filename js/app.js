@@ -21,6 +21,7 @@ const h1Text = document.querySelectorAll("h1")
 const anchors = document.querySelectorAll('a')
 const pText = document.querySelectorAll("p")
 const h2Title = document.querySelectorAll("h2")
+const hireMe= document.getElementsByClassName("home-bt")
 const h4Text = document.querySelectorAll("h4")
 const navBg = document.querySelector(".nav-bg");
 const navToggle = document.querySelector(".nav-toggle");
@@ -29,11 +30,12 @@ const list = document.querySelectorAll(".list");
 const btnDownload = document.getElementsByClassName("home-btn")
 
 let isTogg = false;
+let info = '';
 enEs.addEventListener("click", () => {
     isTogg = !isTogg;
     console.log("sss")
     spanName.innerHTML = isTogg ? `Hola, Soy Daniel Babilonia` : `Hi, I'm Daniel Babionia`
-    console.log(anchors[17])
+    console.log(hireMe[0])
     list[0].innerHTML = isTogg ? 'Inicio' : `Home`
     list[1].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
     list[2].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
@@ -59,8 +61,9 @@ enEs.addEventListener("click", () => {
     h4Text[6].innerHTML = isTogg ? 'Desarrollador Front End' : `Front End Developer`
     h1Text[0].innerHTML = isTogg ? 'Desarrollador Web y Representante de Servicio al cliente Bilingüe' : `Web Developer and Bilingual Customer Service Representative`
     btnDownload[0].innerHTML = isTogg ? 'DESCARGAR HV' : `DOWNLOAD CV`
-    let info = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
-    anchors[17].setAttribute('href', info)
+    info = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
+    anchors[18].setAttribute('href', info)
+    hireMe[0].innerHTML = isTogg ? 'CONTACTAME' : `HIRE ME`
 })
 
 // new ClipboardJS('#boton-a-copiar', {
@@ -91,27 +94,5 @@ copyButton.addEventListener('click', function() {
     });
   });
   
-
-navToggle.addEventListener("click", ()=> {
-
-    if (navBg.style.display == "block"){
-        navBg.style.display = "none";
-    }else{
-        navBg.style.display = "block";
-    }
-})
-
-function copyFunction() {
-    const copyText = document.getElementById("myInput").textContent;
-    const textArea = document.createElement('textarea');
-    textArea.textContent = copyText;
-    document.body.append(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    k2button.innerText = "Text copied";
-      textArea.remove();
-}
-
-document.getElementById('k2button').addEventListener('click', copyFunction);
 
 
