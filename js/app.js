@@ -37,7 +37,7 @@ enEs.addEventListener("click", () => {
     list[1].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
     list[2].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
     list[3].innerHTML = isTogg ? 'Experiencía' : `Experience`
-    list[4].innerHTML = isTogg ? 'Portfolio' : `Portafolio`
+    list[4].innerHTML = isTogg ? 'Portafolio' : `Portfolio`
     list[5].innerHTML = isTogg ? 'Contáctame' : `Contact Me`
     h2Title[3].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
     h2Title[4].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
@@ -50,10 +50,12 @@ enEs.addEventListener("click", () => {
 
     I am ready to face any challenge with enthusiasm and help take your business to the next level.`
     pText[1].innerHTML = isTogg ? '2023 - Presente' : `2023 - Present`
-    pText[4].innerHTML = isTogg ? 'Número Telefono' : `Phone Number` 
+    // pText[4].innerHTML = isTogg ? 'Número Telefono' : `Phone Number` 
+    pText[5].innerHTML = isTogg ? 'Número Telefono' : `Phone Number` 
     h4Text[0].innerHTML = isTogg ? 'Especialista en Soporte Técnico' : `Technical Support Specialist`
     h4Text[2].innerHTML = isTogg ? 'Desarrollador Front End' : `Front End Developer`
     h4Text[4].innerHTML = isTogg ? 'Representante Bilingüe de Servicio al Cliente' : `Bilingual Customer Service Representative`
+    h4Text[6].innerHTML = isTogg ? 'Desarrollador Front End' : `Front End Developer`
     h1Text[0].innerHTML = isTogg ? 'Desarrollador Web y Representante de Servicio al cliente Bilingüe' : `Web Developer and Bilingual Customer Service Representative`
     btnDownload[0].innerHTML = isTogg ? 'DESCARGAR HV' : `DOWNLOAD CV`
 })
