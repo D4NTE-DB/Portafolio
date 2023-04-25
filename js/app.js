@@ -61,15 +61,34 @@ enEs.addEventListener("click", () => {
     
 })
 
-new ClipboardJS('#boton-a-copiar', {
-    text: function(trigger) {
-        console.log("perrito")
-      return trigger.getAttribute('data-clipboard-target');
-    }
+// new ClipboardJS('#boton-a-copiar', {
+//     text: function(trigger) {
+//         console.log("perrito")
+//       return trigger.getAttribute('data-clipboard-target');
+//     }
+//   });
+
+let copyButton = document.getElementById('boton-a-copiar');
+
+copyButton.addEventListener('click', function() {
+    console.log('222')
+    var clipboard = new ClipboardJS(copyButton, {
+      text: function() {
+        return pText[6].textContent.replace(/\s+/g, '');
+      }
+    });
+
+    clipboard.on('success', function(e) {
+      console.log('Text copied to clipboard: ' + e.text.replace(/\s+/g, ''));
+      clipboard.destroy();
+    });
+
+    clipboard.on('error', function(e) {
+      console.error('Error copying text to clipboard: ' + e.text.replace(/\s+/g, ''));
+      clipboard.destroy();
+    });
   });
   
-
-  new ClipboardJS(pText[6]);
 
 navToggle.addEventListener("click", ()=> {
 
