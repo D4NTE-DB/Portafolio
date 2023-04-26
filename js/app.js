@@ -31,6 +31,7 @@ const btnDownload = document.getElementsByClassName("home-btn")
 
 let isTogg = false;
 let info = '';
+let infoDownload = '';
 enEs.addEventListener("click", () => {
     isTogg = !isTogg;
     console.log("sss")
@@ -39,6 +40,7 @@ enEs.addEventListener("click", () => {
       console.log(anchors[index])
       
     }
+    console.log(`sss ${anchors[13]}`)
     // console.log(anchors)
     list[0].innerHTML = isTogg ? 'Inicio' : `Home`
     list[1].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
@@ -68,6 +70,9 @@ enEs.addEventListener("click", () => {
     info = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo!' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
     anchors[18].setAttribute('href', info)
     anchors[12].setAttribute('href', info)
+    infoDownload = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo!' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
+    infoDownload = isTogg ? './downloads/ES Daniel Babilonia CV DEF.pdf' : './downloads/EN Daniel Babilonia CV DEF.pdf'
+    anchors[14].setAttribute('href', infoDownload)
     hireMe[0].innerHTML = isTogg ? 'CONTACTAME' : `HIRE ME`
 })
 
