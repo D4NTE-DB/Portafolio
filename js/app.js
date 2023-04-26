@@ -35,7 +35,11 @@ enEs.addEventListener("click", () => {
     isTogg = !isTogg;
     console.log("sss")
     spanName.innerHTML = isTogg ? `Hola, Soy Daniel Babilonia` : `Hi, I'm Daniel Babionia`
-    console.log(hireMe[0])
+    for (let index = 0; index < anchors.length; index++) {
+      console.log(anchors[index])
+      
+    }
+    // console.log(anchors)
     list[0].innerHTML = isTogg ? 'Inicio' : `Home`
     list[1].innerHTML = isTogg ? 'Sobre Mí' : `About Me`
     list[2].innerHTML = isTogg ? 'Tecnologías' : `Technologies`
@@ -63,6 +67,7 @@ enEs.addEventListener("click", () => {
     btnDownload[0].innerHTML = isTogg ? 'DESCARGAR HV' : `DOWNLOAD CV`
     info = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
     anchors[18].setAttribute('href', info)
+    anchors[12].setAttribute('href', info)
     hireMe[0].innerHTML = isTogg ? 'CONTACTAME' : `HIRE ME`
 })
 
