@@ -65,7 +65,7 @@ enEs.addEventListener("click", () => {
     h4Text[6].innerHTML = isTogg ? 'Desarrollador Front End' : `Front End Developer`
     h1Text[0].innerHTML = isTogg ? 'Desarrollador Web y Representante de Servicio al cliente Bilingüe' : `Web Developer and Bilingual Customer Service Representative`
     btnDownload[0].innerHTML = isTogg ? 'DESCARGAR HV' : `DOWNLOAD CV`
-    info = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
+    info = isTogg ? 'mailto:dantealigheri.1998@gmail.com?Subject=Me%20gustaría%20empezar%20a%20trabajar%20contigo!' : `mailto:dantealigheri.1998@gmail.com?Subject=I%20Would%20like%20to%20start%20working%20with%20you!`
     anchors[18].setAttribute('href', info)
     anchors[12].setAttribute('href', info)
     hireMe[0].innerHTML = isTogg ? 'CONTACTAME' : `HIRE ME`
