@@ -817,7 +817,7 @@ main {
     height: 300px;
     position: absolute;
     left: 0;
-    display: none;
+    display: initial;
     background-color: #020403;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -959,7 +959,7 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
         height: 200px;
         position: absolute;
         left: 0;
-        display: none;
+        display: initial;
         background-color: #020403;
         border: 2px solid transparent;
         border-radius: 10px;
