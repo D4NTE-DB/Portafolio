@@ -800,6 +800,7 @@ main {
     margin: 0 auto;
     width: 300px;
     height: 300px;
+    border-radius: 10px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -821,7 +822,7 @@ main {
     background-color: #020403;
     border: 2px solid transparent;
     border-radius: 10px;
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+    /* box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24); */
     
 }
 
@@ -856,7 +857,7 @@ main {
     }
   }
 
-.tech-icons{
+.tech-icons  {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -867,6 +868,24 @@ main {
     gap: 50px;
     text-align: center;
     
+}
+
+.tech-icons1  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* width: 50%; */
+    gap: 50px;
+    text-align: center;
+    
+}
+
+.tech-icons1 > div > box-icon {
+    fill: white !important;
+    width: 50px;
 }
 
 .tech-icons > div > box-icon {
@@ -937,10 +956,10 @@ h3{
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
 }
 
-main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-menu > li:hover, .icon-website > a > svg:hover, header:hover, .second-cont:hover, .button-trans:hover, .home-btn:hover, #boton-a-copiar:hover, .icons-contacts:hover, .home-bt:hover {
+main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-menu > li:hover, .icon-website > a > svg:hover, header:hover, .second-cont:hover, .button-trans:hover, .home-btn:hover, #boton-a-copiar:hover, .icons-contacts:hover, .home-bt:hover, .hover-img:hover {
     border: 2px solid transparent;
     border-radius: 10px;
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 2px rgba(0, 255, 255, 0.322), 0 0 40px rgba(0, 255, 255, 0.25), 0 0 60px rgba(0, 255, 255, 0.14);
     /* transform: scale(1.2); */
 
 }
@@ -951,6 +970,7 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
     margin: 0 auto;
     width: 200px;
     height: 200px;
+    border-radius: 10px;
     transition: all 0.5s ease-in-out;
     z-index: 1 !important;
     }
