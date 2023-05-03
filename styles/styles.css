@@ -890,7 +890,7 @@ main {
 
 .tech-icons > div > box-icon {
     fill: white !important;
-    width: 100px;
+    width: 80px;
 }
 
 .container-title > div{
@@ -983,7 +983,7 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
         background-color: #020403;
         border: 2px solid transparent;
         border-radius: 10px;
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24);
+        /* box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 80px rgba(0, 255, 255, 0.322), 0 0 100px rgba(0, 255, 255, 0.336), 0 0 150px rgba(0, 255, 255, 0.24); */
         z-index: 1;
     }
     .hover-img>h2{
@@ -1042,15 +1042,19 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
     }
     .tech-icons{
         flex-direction: row;
-        flex-wrap: unset;
-        justify-content: unset;
+        /* flex-wrap: unset; */
+        /* justify-content: unset; */
         overflow: auto;
+        height: 360px;
     }
-    .hover-img >3{
+    .hover-img >{
         /* flex-direction: row; */
         /* flex-wrap: unset !important; */
         /* overflow: auto !important; */
         color: white;
+    }
+    .techs {
+        margin-bottom: 40px;
     }
 }
 
