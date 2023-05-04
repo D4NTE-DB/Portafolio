@@ -818,7 +818,7 @@ main {
     height: 300px;
     position: absolute;
     left: 0;
-    display: initial;
+    display: none;
     background-color: #020403;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -895,6 +895,7 @@ main {
 
 .container-title > div{
     margin: 20px;
+    padding: 20px;
 }
 
 div > box-icon{
@@ -964,6 +965,10 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
 
 }
 
+.hover-img:hover {
+    /* left: 3000px; */
+}
+
 @media (max-width: 1000px) {
     .portfolio-img>a > img {
     /* position: absolute; */
@@ -979,7 +984,7 @@ main > section > div:hover, .nav-bg > h2:hover, .nav-widget > li:hover, .nav-men
         height: 200px;
         position: absolute;
         left: 0;
-        display: initial;
+        display: none;
         background-color: #020403;
         border: 2px solid transparent;
         border-radius: 10px;
