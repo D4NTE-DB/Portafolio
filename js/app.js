@@ -53,11 +53,7 @@ enEs.addEventListener("click", () => {
     h2Title[5].innerHTML = isTogg ? 'Experiencía' : `Experience`
     h2Title[6].innerHTML = isTogg ? 'Portafolio' : `Portfolio`
     h2Title[10].innerHTML = isTogg ? 'Contáctame' : `Contact Me`
-    pText[0].innerHTML = isTogg ? `Como Desarrollador Web Frontend y Representante de Servicio al Cliente Bilingüe, estoy emocionado de contar con una amplia experiencia en atención al cliente en un ambiente bilingüe y habilidades en la creación y diseño de interfaces de usuario impresionantes. Además, tengo la capacidad de solucionar problemas y trabajar en equipo de manera efectiva para optimizar la experiencia del usuario en cualquier proyecto que se me presente. 
-
-    Estoy listo para enfrentar cualquier desafío con entusiasmo y ayudar a llevar su negocio al siguiente nivel.` : `As a Frontend Web Developer and Bilingual Customer Service Representative, I am excited to have extensive experience in customer service in a bilingual environment and skills in creating and designing impressive user interfaces. Additionally, I have the ability to solve problems and work effectively in a team to optimize the user experience on any project presented to me.
-
-    I am ready to face any challenge with enthusiasm and help take your business to the next level.`
+    pText[0].innerHTML = isTogg ? `Soy un desarrollador web apasionado y con experiencia, con habilidades en el desarrollo tanto en el front-end como en el back-end. Como desarrollador independiente, he trabajado en diversos proyectos y siempre estoy ansioso por aprender nuevas tecnologías. Poseo excelentes habilidades sociales, desarrolladas a través de mi experiencia previa en servicio al cliente, lo que me permite comunicarme efectivamente y brindar soluciones que superan las expectativas.` : `I am a passionate web developer with expertise in both front-end and back-end development. As a freelance developer, I have worked on diverse projects and I am always eager to learn new technologies. I possess excellent soft skills, developed through my previous work in customer service, allowing me to effectively communicate and deliver solutions that exceed expectations.`
     pText[1].innerHTML = isTogg ? '2023 - Presente' : `2023 - Present`
     // pText[4].innerHTML = isTogg ? 'Número Telefono' : `Phone Number` 
     pText[5].innerHTML = isTogg ? 'Número Telefono' : `Phone Number` 
